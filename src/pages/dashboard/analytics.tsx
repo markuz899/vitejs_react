@@ -1,5 +1,9 @@
+import Layout from "../../container/Layout";
+
 const DashboardAnalytics = () => {
-  return <div>Dashboard Analytics</div>;
+  return (
+    <Layout title="React with viteJs - Analytics">Dashboard Analytics</Layout>
+  );
 };
 
 export default DashboardAnalytics;

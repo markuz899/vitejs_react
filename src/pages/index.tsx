@@ -1,7 +1,7 @@
 import Layout from "../container/Layout";
 
 const Home = () => {
-  return <Layout>Home</Layout>;
+  return <Layout title="React with viteJs - Home">Home</Layout>;
 };
 
 export default Home;

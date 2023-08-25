@@ -1,3 +1,17 @@
-export default function Layout({ children }: any) {
-  return <div className="app-layout">{children}</div>;
+import { Helmet } from "react-helmet";
+import Navigation from "./Navigation";
+
+export default function Layout({ children, title }: any) {
+  return (
+    <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>{title}</title>
+      </Helmet>
+      <div className="app-layout">
+        <Navigation />
+        {children}
+      </div>
+    </>
+  );
 }

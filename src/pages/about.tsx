@@ -1,5 +1,7 @@
+import Layout from "../container/Layout";
+
 const About = () => {
-  return <div>About</div>;
+  return <Layout title="React with viteJs - About">About</Layout>;
 };
 
 export default About;
