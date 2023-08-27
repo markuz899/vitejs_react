@@ -19,14 +19,14 @@ const Home = () => {
             <div className="bg-white relative">
               <div
                 className="mb-7 p-5 w-full flex items-end justify-between absolute"
-                style={{ top: "-60px" }}
+                style={{ top: "-75px" }}
               >
                 <a href="cv">
                   <img
                     className="border-2 border-slate-200 rounded-md grayscale hover:scale-125 transition duration-500"
                     src="https://media.licdn.com/dms/image/C5603AQHBEEOAHT9lzw/profile-displayphoto-shrink_800_800/0/1600705393575?e=1698883200&v=beta&t=s9rL9MTa8SvV-0E8bVU5ZJbpvhtva9qmaFZIOOFnqgk"
                     alt="avatar"
-                    width={75}
+                    width={100}
                   />
                 </a>
                 <span className="badge badge-neutral p-3">Busy</span>
@@ -292,15 +292,13 @@ const Home = () => {
             <>
               <div className="p-7 pb-0 block-section shadow rounded-xl overflow-hidden bg-white">
                 <h2 className="text-lg font-semibold text-gray-800 mb-4">
-                  Project
+                  Project Name
                 </h2>
                 <div className="flex items-start mb-5">
                   <div className="w-full space-y-5">
                     <div className="flex justify-between">
                       <div className="space-y-1.5">
-                        <div className="font-medium text-gray-600">
-                          Nome tool
-                        </div>
+                        <div className="font-medium text-gray-600">Name</div>
                         <div className="flex space-x-5">
                           <div className="flex items-center text-gray-400 text-sm">
                             Utility tool
@@ -308,14 +306,7 @@ const Home = () => {
                         </div>
                       </div>
                     </div>
-                    <p className="text-gray-600">
-                      Aut omnis voluptatem sit sequi. Voluptatem temporibus
-                      repellat voluptatem voluptatibus enim voluptas
-                      necessitatibus. Aut quasi sunt dolor. Commodi dolores
-                      saepe asperiores beatae voluptate corporis est ea
-                      voluptatem. Enim quo sed et sint aspernatur distinctio qui
-                      quam.
-                    </p>
+                    <p className="text-gray-600">Description</p>
                     <div className="border-b border-gray-200"></div>
                   </div>
                 </div>
