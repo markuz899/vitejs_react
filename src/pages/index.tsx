@@ -23,7 +23,7 @@ const Home = () => {
               >
                 <a href="cv">
                   <img
-                    className="border-2 border-slate-200 rounded-md grayscale"
+                    className="border-2 border-slate-200 rounded-md grayscale hover:scale-125 transition duration-500"
                     src="https://media.licdn.com/dms/image/C5603AQHBEEOAHT9lzw/profile-displayphoto-shrink_800_800/0/1600705393575?e=1698883200&v=beta&t=s9rL9MTa8SvV-0E8bVU5ZJbpvhtva9qmaFZIOOFnqgk"
                     alt="avatar"
                     width={75}

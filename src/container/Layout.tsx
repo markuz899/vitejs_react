@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet";
+import Footer from "./Footer";
 
 export default function Layout({ children, title }: any) {
   const mainStyle = {
@@ -17,6 +18,7 @@ export default function Layout({ children, title }: any) {
         <main className="main-container" style={mainStyle}>
           {children}
         </main>
+        <Footer />
       </div>
     </>
   );
