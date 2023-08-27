@@ -8,6 +8,8 @@ import {
 import Error from "./Error";
 import ProtectedRoot from "./utils/ProtectedRoot";
 
+import "./index.css";
+
 interface RouteCommon {
   loader?: LoaderFunction;
   action?: ActionFunction;
