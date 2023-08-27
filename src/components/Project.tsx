@@ -16,11 +16,11 @@ export default function Project({ data }: any) {
                   </div>
                 </div>
               </div>
-              <p className="text-gray-600">Description</p>
-              <div
-                className="border-b border-gray-200"
+              <p
+                className="text-gray-600"
                 dangerouslySetInnerHTML={{ __html: el.description }}
-              ></div>
+              ></p>
+              <div className="border-b border-gray-200"></div>
             </div>
           </div>
         );

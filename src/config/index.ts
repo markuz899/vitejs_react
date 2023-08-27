@@ -15,7 +15,7 @@ export const userInfo = {
   birtday: "06/07/1989",
   funFact: "Take care of your life, develop prudently",
   skills: {
-    backEnd: ["Node", "Fastify", "Express"],
+    backEnd: ["Node", "Fastify", "Express", "Strapi"],
     frontEnd: ["HTML/CSS/SCSS", "Javasctipt", "React", "Redux", "NextJs"],
     design: ["Styled-components", "Bootstrap", "Tailwind", "Daisyui"],
     devOps: ["Docker", "Nginx", "Apache"],
@@ -34,34 +34,69 @@ export const userInfo = {
     relocation: false,
   },
   aboutMe: {
-    info: "Libero quas veritatis nulla distinctio fuga nihil temporibus et. Quia dicta sapiente qui porro molestiae nobis incidunt voluptatem. Et voluptas sunt nihil. At perferendis voluptatem dolores nulla. Adipisci dolore non. Praesentium ipsa magnam ut quia explicabo voluptates.",
+    info: "Devoto sviluppatore web full stack con una passione cosmica. Il mio viaggio dall'interesse per l'informatica fin da bambino all'attuale ruolo professionale è una testimonianza della dedizione e dell'impegno nel creare connessioni tra la tecnologia e l'universo, dando vita a soluzioni digitali che ispirano e incantano. <br/><i class='text-sm'>By ChatGPT</i>",
     email: "marcoliberati.89@gmail.com",
     github: "https://github.com/markuz899",
     linkedin: "https://www.linkedin.com/in/marco-liberati-010302194/",
   },
   experience: [
     {
-      role: "Web developer - Backend",
-      agency: "Azienda",
+      role: "Product Owner",
+      agency: "Intern",
       location: "Italia",
       time: "Full Time",
-      data: "Dicembre 2018",
-      description: "Piccola descrizione",
+      data: "Dicembre 2022 - Oggi",
+      description: "Sviluppo di White label in tema Noleggio a lungo termine.",
+    },
+    {
+      role: "Web developer - Backend",
+      agency: "The Hurry",
+      location: "Italia",
+      time: "Full Time",
+      data: "Settembre 2021",
+      description:
+        "Responsabile della creazione, gestione e ottimizzazione delle componenti per il portale The Hurry.",
     },
     {
       role: "Web developer - Frontend",
-      agency: "Azienda",
+      agency: "The Hurry",
       location: "Italia",
       time: "Full Time",
-      data: "Dicembre 2017",
-      description: "Piccola descrizione",
+      data: "Luglio 2019",
+      description:
+        "Costruzione di layout grafici ottimizzati per garantire l'usabilità e l'aspetto visivo del portale The Hurry",
     },
   ],
   project: [
     {
-      type: "Type of project",
-      name: "Project name",
-      description: "Description project",
+      name: "<PRIVATE>",
+      type: "CMS - Content Management System",
+      description: "Creazione web server in nodejs - mysql",
+    },
+    {
+      name: "<PRIVATE>",
+      type: "CRM - Customer Relationship Management",
+      description: "Creazione gestionale per acquisizione nuovi clienti",
+    },
+    {
+      name: "<PRIVATE>",
+      type: "WEBSITE",
+      description: "Creazione piattaforma per noleggio a lungo termine",
+    },
+    {
+      name: "LLAMAWAY",
+      type: "Ecommerce",
+      description: "Ecommerce per la vendita di giochi digitali",
+    },
+    {
+      name: "Torre delle cornacchie",
+      type: "WEBSITE",
+      description: "Sito web per prenotazione e gestione location",
+    },
+    {
+      name: "Sushihouse",
+      type: "WEBSITE",
+      description: "Landing page per ristorante",
     },
   ],
   education: [
@@ -69,7 +104,7 @@ export const userInfo = {
       type: "ITIS",
       name: "Enrico Fermi",
       location: "Roma",
-      data: "Agosto 2014",
+      data: "",
     },
   ],
 };
