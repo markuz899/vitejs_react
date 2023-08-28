@@ -8,6 +8,12 @@ export default function Information({ data }: any) {
       <h2 className="text-lg font-semibold text-gray-800 mb-4">Informazioni</h2>
       <div className="space-y-4">
         <div className="flex justify-between">
+          <div className="text-gray-400">Età</div>
+          <div className="font-medium text-right text-gray-600">
+            {data.birthday}
+          </div>
+        </div>
+        <div className="flex justify-between">
           <div className="text-gray-400">Località</div>
           <div className="font-medium text-right text-gray-600">
             {data.location}

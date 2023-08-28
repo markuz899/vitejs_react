@@ -38,6 +38,7 @@ export const userInfo = {
     ],
   },
   information: {
+    birthday: "06/07/1989",
     location: "Italia - Roma",
     experience: 2019,
     availableFor: "Piccoli progetti",

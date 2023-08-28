@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function About({ setMenuActive, menuActive, data }: any) {
   return (
     <div className="p-7 pb-0 block-section shadow rounded-xl overflow-hidden bg-white">
@@ -47,6 +49,13 @@ export default function About({ setMenuActive, menuActive, data }: any) {
           } hover:text-primary border-b-2 hover:border-b-primary pb-5 transition cursor-pointer`}
         >
           <a>Progetti</a>
+        </li>
+        <li
+          className={`text-gray-600 border-b-transparent hover:text-primary border-b-2 hover:border-b-primary pb-5 transition cursor-pointer`}
+        >
+          <Link to="/game" target="_blank">
+            For Children
+          </Link>
         </li>
       </ul>
     </div>
