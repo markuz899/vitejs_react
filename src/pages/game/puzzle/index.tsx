@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import useMobile from "../../../hooks/useMobile";
 import { images } from "../../../config";
+import Layout from "../../../container/Layout";
 import "./style.css";
 
 export default function PuzzleGame() {
@@ -142,7 +143,14 @@ export default function PuzzleGame() {
   };
 
   return (
-    <>
+    <Layout
+      style={{
+        height: "100vh",
+        maxWidth: "100%",
+        padding: 0,
+        background: "#2a323ce0",
+      }}
+    >
       <div className="flex justify-center items-center w-full pt-5">
         <input
           ref={inputRef}
@@ -182,6 +190,6 @@ export default function PuzzleGame() {
         </div>
         <div id="clicks">Finish in - {click}</div>
       </div>
-    </>
+    </Layout>
   );
 }

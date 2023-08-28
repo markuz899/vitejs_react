@@ -2,18 +2,19 @@ import { Helmet } from "react-helmet";
 import Footer from "./Footer";
 import { userInfo } from "../config";
 
-export default function Layout({ children }: any) {
+export default function Layout({ children, title, style }: any) {
   const mainStyle = {
     maxWidth: "1200px",
     marginLeft: "auto",
     marginRight: "auto",
     padding: "20px",
+    ...style,
   };
   return (
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>{userInfo.mainCard.fullname} - CV</title>
+        <title>{title || userInfo.mainCard.fullname} - CV</title>
         <link
           rel="icon"
           type="image/svg+xml"
