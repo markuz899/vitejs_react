@@ -14,7 +14,7 @@ import {
 const Home = () => {
   const [menuActive, setMenuActive] = useState(1);
   return (
-    <Layout title="Marco Liberati - CV">
+    <Layout>
       <div className="grid gap-5 lg:grid-cols-3">
         <div className="space-y-5">
           <User data={userInfo.mainCard} />

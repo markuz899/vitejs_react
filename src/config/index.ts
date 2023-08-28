@@ -4,7 +4,8 @@ export const userInfo = {
     name: "Marco",
     surname: "Liberati",
     fullname: "Marco Liberati",
-    cvFile: "marco_liberati.csv",
+    cvFile: "marco_liberati_cv.pdf",
+    favicon: "https://avatars.githubusercontent.com/u/52067713?v=4",
     cover:
       "https://cdn.pixabay.com/photo/2016/12/15/20/21/texture-1909992_640.jpg",
     avatar:
@@ -34,7 +35,7 @@ export const userInfo = {
     relocation: false,
   },
   aboutMe: {
-    info: "Devoto sviluppatore web full stack con una passione cosmica. Il mio viaggio dall'interesse per l'informatica fin da bambino all'attuale ruolo professionale è una testimonianza della dedizione e dell'impegno nel creare connessioni tra la tecnologia e l'universo, dando vita a soluzioni digitali che ispirano e incantano. <br/><i class='text-sm'>By ChatGPT</i>",
+    info: "Devoto sviluppatore web full stack con una passione cosmica. Il mio viaggio dall'interesse per l'informatica fin da bambino all'attuale ruolo professionale è una testimonianza della dedizione e dell'impegno nel creare connessioni tra la tecnologia e l'universo. <br/> Attitudine al lavoro di squadra e grande capacità di adattamento all'interno di diversi contesti professionali, sociali e culturali <br/><br/>Stack basato su linguaggio Javascript, (MERN) con ottima conoscenza di tutte le tecnologie che ne conseguono: html, css3, sass. </br> Front-end: ReactJs, NextJs, Web-components, Ajax, Styled-components </br>Back-end: Express, Fastify, Mongodb, pm2 monitoraggio degli applicativi online. Redis, Docker</br>Gestione versioning tramite GIT.</br>Struttura del flusso di lavoro tramite task, sprint, tutto in ottica agile con l’utilizzo di software come Jira(Atlassian)</br></br>Negli ultimi anni grazie all’esperienza conseguita sul lavoro, ho contribuito nella realizzazione di PWA sfruttando lato frontend tecnologie come ReactJs, NextJs Redux e Saga e lato backend Nginx, Apache, Nodejs, Express, Mongodb, MySql, SQLite o CMS open source come Strapi",
     email: "marcoliberati.89@gmail.com",
     github: "https://github.com/markuz899",
     linkedin: "https://www.linkedin.com/in/marco-liberati-010302194/",
@@ -65,6 +66,24 @@ export const userInfo = {
       data: "Luglio 2019",
       description:
         "Costruzione di layout grafici ottimizzati per garantire l'usabilità e l'aspetto visivo del portale The Hurry",
+    },
+    {
+      role: "Web developer - Frontend",
+      agency: "Up2Lab",
+      location: "Italia",
+      time: "Full Time",
+      data: "Luglio 2017",
+      description:
+        "Realizzazione piattaforme web per privati e società esterne",
+    },
+    {
+      role: "Web developer - FullStack",
+      agency: "M&T s.r.l",
+      location: "Italia",
+      time: "Full Time",
+      data: "Luglio 2014",
+      description:
+        "Gestione sito web e gestione informatica documentazione società commerciale medicina e chirurgia",
     },
   ],
   project: [

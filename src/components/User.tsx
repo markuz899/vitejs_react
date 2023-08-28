@@ -1,4 +1,7 @@
 export default function User({ data }: any) {
+  function getImageUrl() {
+    return new URL(`../assets/${data.cvFile}`, import.meta.url).href;
+  }
   return (
     <div className="shadow rounded-xl overflow-hidden">
       <div
@@ -13,7 +16,7 @@ export default function User({ data }: any) {
           className="mb-7 p-5 w-full flex items-end justify-between absolute"
           style={{ top: "-75px" }}
         >
-          <a href="cv">
+          <a href={getImageUrl()} target="_blank">
             <img
               className="border-2 border-slate-200 rounded-md grayscale hover:scale-125 transition duration-500"
               src={data.avatar}
@@ -37,7 +40,11 @@ export default function User({ data }: any) {
 
         <div className="flex group p-5 pt-1.5">
           <button className="btn btn-primary w-full">
-            <a className="flex items-center" href={data.cvFile} target="_blank">
+            <a
+              className="flex items-center"
+              href={getImageUrl()}
+              target="_blank"
+            >
               Scarica CV
               <svg
                 xmlns="http://www.w3.org/2000/svg"

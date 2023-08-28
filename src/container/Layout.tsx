@@ -1,7 +1,8 @@
 import { Helmet } from "react-helmet";
 import Footer from "./Footer";
+import { userInfo } from "../config";
 
-export default function Layout({ children, title }: any) {
+export default function Layout({ children }: any) {
   const mainStyle = {
     maxWidth: "1200px",
     marginLeft: "auto",
@@ -12,7 +13,12 @@ export default function Layout({ children, title }: any) {
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>{title}</title>
+        <title>{userInfo.mainCard.fullname} - CV</title>
+        <link
+          rel="icon"
+          type="image/svg+xml"
+          href={userInfo.mainCard.favicon || "/vite.svg"}
+        />
       </Helmet>
       <div className="app-layout bg-gray-200 antialiased">
         <main className="main-container" style={mainStyle}>
