@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
-import useMobile from "../../hooks/useMobile";
-import { images } from "../../config";
+import useMobile from "../../../hooks/useMobile";
+import { images } from "../../../config";
 import "./style.css";
 
 export default function PuzzleGame() {
