@@ -1,26 +1,22 @@
 import { Helmet } from "react-helmet";
 import Footer from "./Footer";
-import { userInfo } from "../config";
 
 export default function Layout({ children }: any) {
   const mainStyle = {
-    maxWidth: "1200px",
+    maxWidth: "1300px",
     marginLeft: "auto",
     marginRight: "auto",
     padding: "20px",
+    height: "100%",
   };
   return (
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>{userInfo.mainCard.fullname} - CV</title>
-        <link
-          rel="icon"
-          type="image/svg+xml"
-          href={userInfo.mainCard.favicon || "/vite.svg"}
-        />
+        <title>PUZZLE GAME</title>
+        <link rel="icon" type="image/svg+xml" href={"/vite.svg"} />
       </Helmet>
-      <div className="app-layout bg-gray-200 antialiased">
+      <div className="app-layout antialiased box-content">
         <main className="main-container" style={mainStyle}>
           {children}
         </main>
