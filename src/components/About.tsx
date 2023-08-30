@@ -2,10 +2,12 @@ import { Link } from "react-router-dom";
 
 export default function About({ setMenuActive, menuActive, data }: any) {
   return (
-    <div className="p-7 pb-0 block-section shadow rounded-xl overflow-hidden bg-white">
-      <h2 className="text-lg font-semibold text-gray-800 mb-4">Su di me</h2>
+    <div className="p-7 pb-0 block-section shadow rounded-xl overflow-hidden bg-white dark:bg-slate-800">
+      <h2 className="text-lg font-semibold text-gray-800 dark:text-white mb-4">
+        Su di me
+      </h2>
       <p
-        className="text-gray-600 mb-5"
+        className="text-gray-600 dark:text-gray-300 mb-5"
         dangerouslySetInnerHTML={{ __html: data.info }}
       ></p>
       <div className="flex flex-col space-y-4">

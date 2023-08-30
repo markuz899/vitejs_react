@@ -21,7 +21,7 @@ export default function Layout({ children, title, style }: any) {
           href={userInfo.mainCard.favicon || "/vite.svg"}
         />
       </Helmet>
-      <div className="app-layout bg-gray-200 antialiased">
+      <div className="app-layout bg-gray-200 dark:bg-slate-600 antialiased">
         <main className="main-container" style={mainStyle}>
           {children}
         </main>

@@ -1,3 +1,10 @@
+import { Switch } from ".";
+
+const absoluteTheme = {
+  right: "10px",
+  top: "10px",
+};
+
 export default function User({ data }: any) {
   function getImageUrl() {
     return new URL(`../assets/${data.cvFile}`, import.meta.url).href;
@@ -5,13 +12,20 @@ export default function User({ data }: any) {
   return (
     <div className="shadow rounded-xl overflow-hidden">
       <div
-        className="h-32 bg-cover"
+        className="h-32 bg-cover relative"
         style={{
           backgroundImage: `url(${data.cover})`,
         }}
-      ></div>
+      >
+        <div
+          style={absoluteTheme}
+          className="absolute bg-white dark:bg-slate-800 flex justify-center items-center rounded-3xl w-9 h-9"
+        >
+          <Switch />
+        </div>
+      </div>
 
-      <div className="bg-white relative">
+      <div className="bg-white relative dark:bg-slate-800">
         <div
           className="mb-7 p-5 w-full flex items-end justify-between absolute"
           style={{ top: "-75px" }}
@@ -31,10 +45,10 @@ export default function User({ data }: any) {
 
         <div className="flex items-center justify-between p-5 pt-10">
           <div>
-            <div className="text-lg font-semibold mt-3 mb-1.5 text-gray-800">
+            <div className="text-lg font-semibold mt-3 mb-1.5 dark:text-white">
               {data.fullname}
             </div>
-            <div className="text-sm text-gray-500">{data.role}</div>
+            <div className="text-sm">{data.role}</div>
           </div>
         </div>
 

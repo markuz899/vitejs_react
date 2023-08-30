@@ -4,8 +4,10 @@ export default function Information({ data }: any) {
     return now - data.experience + "+";
   };
   return (
-    <div className="p-7 block-section rounded-xl bg-white">
-      <h2 className="text-lg font-semibold text-gray-800 mb-4">Informazioni</h2>
+    <div className="p-7 block-section rounded-xl bg-white dark:bg-slate-800">
+      <h2 className="text-lg font-semibold mb-4 dark:text-white">
+        Informazioni
+      </h2>
       <div className="space-y-4">
         <div className="flex justify-between">
           <div className="text-gray-400">Età</div>

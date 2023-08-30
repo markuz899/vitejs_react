@@ -9,7 +9,6 @@ export default function Game() {
         height: "100vh",
         maxWidth: "100%",
         padding: 0,
-        background: "#2a323ce0",
       }}
     >
       <div className="flex justify-center items-center pt-5 h-full">

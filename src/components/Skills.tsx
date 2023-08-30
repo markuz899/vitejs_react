@@ -12,8 +12,10 @@ export default function Skills({ data }: any) {
   };
 
   return (
-    <div className="p-7 block-section rounded-xl bg-white">
-      <h2 className="text-lg font-semibold text-gray-800 mb-4">Skills</h2>
+    <div className="p-7 block-section rounded-xl bg-white dark:bg-slate-800">
+      <h2 className="text-lg font-semibold text-gray-800 mb-4 dark:text-white">
+        Skills
+      </h2>
       <div className="space-y-4">
         {Object.keys(data).length &&
           Object.keys(data).map((skill: any, index: any) => {
@@ -25,7 +27,7 @@ export default function Skills({ data }: any) {
                     return (
                       <div
                         key={i}
-                        className={`rounded badge badge-primary opacity-60 p-4 mr-2 mb-2 hover:opacity-100 transition ${coloors[index]} border-transparent`}
+                        className={`rounded badge badge-primary opacity-100 p-4 mr-2 mb-2 hover:opacity-100 transition ${coloors[index]} border-transparent text-white`}
                       >
                         {el}
                       </div>
