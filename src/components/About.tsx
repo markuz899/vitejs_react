@@ -1,14 +1,24 @@
+import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
-export default function About({ setMenuActive, menuActive, data }: any) {
+export default function About({
+  setMenuActive,
+  menuActive,
+  data,
+  language,
+}: any) {
+  const { t } = useTranslation();
+  const { currentLanguage } = language;
   return (
     <div className="p-7 pb-0 block-section shadow rounded-xl overflow-hidden bg-white dark:bg-slate-800">
       <h2 className="text-lg font-semibold text-gray-800 dark:text-white mb-4">
-        Su di me
+        {t("translations:about:title")}
       </h2>
       <p
         className="text-gray-600 dark:text-gray-300 mb-5"
-        dangerouslySetInnerHTML={{ __html: data.info }}
+        dangerouslySetInnerHTML={{
+          __html: currentLanguage === "it" ? data.info : data.infoEn,
+        }}
       ></p>
       <div className="flex flex-col space-y-4">
         <a className="text-primary">
@@ -40,7 +50,7 @@ export default function About({ setMenuActive, menuActive, data }: any) {
               : "text-gray-600 border-b-transparent"
           } hover:text-primary border-b-2 hover:border-b-primary pb-5 transition cursor-pointer`}
         >
-          <a>Storia</a>
+          <a>{t("translations:about:story")}</a>
         </li>
         <li
           onClick={() => setMenuActive(2)}
@@ -50,13 +60,13 @@ export default function About({ setMenuActive, menuActive, data }: any) {
               : "text-gray-600 border-b-transparent"
           } hover:text-primary border-b-2 hover:border-b-primary pb-5 transition cursor-pointer`}
         >
-          <a>Progetti</a>
+          <a>{t("translations:about:project")}</a>
         </li>
         <li
           className={`text-gray-600 border-b-transparent hover:text-primary border-b-2 hover:border-b-primary pb-5 transition cursor-pointer`}
         >
           <Link to="/game" target="_blank">
-            For Children
+            {t("translations:about:forChildren")}
           </Link>
         </li>
       </ul>

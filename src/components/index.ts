@@ -6,6 +6,7 @@ import Experience from "./Experience";
 import Education from "./Education";
 import Project from "./Project";
 import Switch from "./Switch";
+import SwitchLanguage from "./SwitchLanguage";
 
 export {
   User,
@@ -16,4 +17,5 @@ export {
   Education,
   Project,
   Switch,
+  SwitchLanguage,
 };

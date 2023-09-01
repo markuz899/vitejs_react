@@ -1,0 +1,35 @@
+{
+  "translations": {
+    "user": {
+      "userAvailableTrue": "Disponibile",
+      "userAvailableFalse": "Non Disponibile",
+      "downloadCv": "Scarica CV"
+    },
+    "info": {
+      "title": "Informazioni",
+      "age": "Età",
+      "locality": "Località",
+      "experience": "Esperienza",
+      "availableFor": "Disponibile per",
+      "shift": "Spostamento"
+    },
+    "about": {
+      "title": "Su di me",
+      "story": "Storia",
+      "project": "Progetti",
+      "forChildren": "For Children"
+    },
+    "experience": {
+      "title": "Esperienze"
+    },
+    "education": {
+      "title": "Educazione"
+    },
+    "project": {
+      "title": "Progetti"
+    },
+    "footer": {
+      "title": "Sito web realizzato come caso di studio per ViteJs - Tailwind"
+    }
+  }
+}

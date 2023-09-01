@@ -4,6 +4,8 @@ import {
   LoaderFunction,
   ActionFunction,
 } from "react-router-dom";
+import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 import Error from "./Error";
 import ProtectedRoot from "./utils/ProtectedRoot";
@@ -54,21 +56,42 @@ for (const path of Object.keys(pages)) {
   });
 }
 
-const router = createBrowserRouter(
-  routes.map(({ Element, ErrorBoundary, ...rest }) => ({
-    ...rest,
-    element: restricted.includes(rest.path) ? (
-      <ProtectedRoot>
-        <Element />
-      </ProtectedRoot>
-    ) : (
-      <Element />
-    ),
-    errorElement: <Error />,
-  }))
-);
-
 const App = () => {
+  const {
+    t,
+    i18n: { changeLanguage, language },
+  } = useTranslation();
+  const [currentLanguage, setCurrentLanguage] = useState<string>(language);
+
+  const handleChangeLanguage = () => {
+    const newLanguage: string = currentLanguage === "en" ? "it" : "en";
+    setCurrentLanguage(newLanguage);
+    changeLanguage(newLanguage);
+  };
+
+  const data: any = {
+    language: {
+      translate: t,
+      currentLanguage: language,
+      setCurrentLanguage,
+      handleChangeLanguage,
+    },
+  };
+
+  const router = createBrowserRouter(
+    routes.map(({ Element, ErrorBoundary, ...rest }) => ({
+      ...rest,
+      element: restricted.includes(rest.path) ? (
+        <ProtectedRoot>
+          <Element data={data} />
+        </ProtectedRoot>
+      ) : (
+        <Element data={data} />
+      ),
+      errorElement: <Error />,
+    }))
+  );
+
   return <RouterProvider router={router} />;
 };
 

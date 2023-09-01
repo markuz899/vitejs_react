@@ -1,8 +1,12 @@
+import { useTranslation } from "react-i18next";
+
 export default function Education({ data }: any) {
+  const { t } = useTranslation();
+
   return (
     <div className="p-7 pb-0 block-section shadow rounded-xl overflow-hidden bg-white dark:bg-slate-800">
       <h2 className="text-lg font-semibold text-gray-800 mb-4 dark:text-white">
-        Educazione
+        {t("translations:education:title")}
       </h2>
       {data.map((el: any, i: any) => {
         return (

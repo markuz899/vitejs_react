@@ -1,14 +1,24 @@
-import { Switch } from ".";
+import { useTranslation } from "react-i18next";
+import { Switch, SwitchLanguage } from ".";
 
 const absoluteTheme = {
   right: "10px",
   top: "10px",
 };
 
-export default function User({ data }: any) {
+const absoluteLanguage = {
+  right: "60px",
+  top: "10px",
+};
+
+export default function User({ data, language }: any) {
+  const { handleChangeLanguage } = language;
+  const { t } = useTranslation();
+
   function getImageUrl() {
     return new URL(`../assets/${data.cvFile}`, import.meta.url).href;
   }
+
   return (
     <div className="shadow rounded-xl overflow-hidden">
       <div
@@ -17,6 +27,13 @@ export default function User({ data }: any) {
           backgroundImage: `url(${data.cover})`,
         }}
       >
+        <div
+          style={absoluteLanguage}
+          className="absolute bg-white dark:bg-slate-800 flex justify-center items-center rounded-3xl w-9 h-9"
+        >
+          <SwitchLanguage onChange={handleChangeLanguage} />
+        </div>
+
         <div
           style={absoluteTheme}
           className="absolute bg-white dark:bg-slate-800 flex justify-center items-center rounded-3xl w-9 h-9"
@@ -39,7 +56,9 @@ export default function User({ data }: any) {
             />
           </a>
           <span className="badge badge-neutral p-3">
-            {data.available ? "Disponibile" : "Non disponibile"}
+            {data.available
+              ? t("translations:user:userAvailableTrue")
+              : t("translations:user:userAvailableFalse")}
           </span>
         </div>
 
@@ -59,7 +78,7 @@ export default function User({ data }: any) {
               href={getImageUrl()}
               target="_blank"
             >
-              Scarica CV
+              {t("translations:user:downloadCv")}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-6 w-6 ml-2"

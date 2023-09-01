@@ -11,14 +11,16 @@ import {
   User,
 } from "../components";
 
-const Home = () => {
+const Home = ({ data }: any) => {
+  const { language } = data;
   const [menuActive, setMenuActive] = useState(1);
+
   return (
     <Layout>
       <div className="grid gap-5 lg:grid-cols-3">
         <div className="space-y-5">
-          <User data={userInfo.mainCard} />
-          <Information data={userInfo.information} />
+          <User data={userInfo.mainCard} language={language} />
+          <Information data={userInfo.information} language={language} />
           <Skills data={userInfo.skills} />
         </div>
         <div className="space-y-5 lg:col-span-2">
@@ -26,6 +28,7 @@ const Home = () => {
             setMenuActive={setMenuActive}
             menuActive={menuActive}
             data={userInfo.aboutMe}
+            language={language}
           />
 
           {menuActive === 1 && (

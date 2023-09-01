@@ -1,0 +1,35 @@
+{
+  "translations": {
+    "user": {
+      "userAvailableTrue": "Available",
+      "userAvailableFalse": "Busy",
+      "downloadCv": "Download CV"
+    },
+    "info": {
+      "title": "Information",
+      "age": "Age",
+      "locality": "Locality",
+      "experience": "Experience",
+      "availableFor": "Available for",
+      "shift": "Shift"
+    },
+    "about": {
+      "title": "About me",
+      "story": "Story",
+      "project": "Project",
+      "forChildren": "For Children"
+    },
+    "experience": {
+      "title": "Experience"
+    },
+    "education": {
+      "title": "Education"
+    },
+    "project": {
+      "title": "Project"
+    },
+    "footer": {
+      "title": "Website created as a case study for ViteJs - Tailwind"
+    }
+  }
+}
